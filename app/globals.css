@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+  }
+  
+  * {
+    @apply border-slate-700;
+  }
+  
+  body {
+    @apply bg-dark text-slate-100 antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-effect {
+    @apply bg-dark-lighter/50 backdrop-blur-md border border-slate-700/50;
+  }
+}
